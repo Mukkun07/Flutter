@@ -5,6 +5,7 @@ A new Flutter application.
 ## Getting Started
 
 --初めて作ったflutterアプリ-- 
+
 名前をリストでランダム生成するアプリ
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
