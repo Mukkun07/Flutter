@@ -1,16 +1,18 @@
 # todo_app
 
-todoアプリ
+## Todoアプリ作成
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+Todoアプリの作成をしています。
 
-A few resources to get you started if this is your first Flutter project:
+## 画面・機能
+- リスト一覧
+- リスト追加
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 追加予定機能
+- 更新機能
+- 削除機能
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 参考
+- [Flutterで始めるアプリ開発](https://www.flutter-study.dev/)
