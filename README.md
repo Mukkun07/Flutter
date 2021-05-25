@@ -10,17 +10,17 @@ Dart言語を使用しAndroid・iOSアプリを開発した内容を載せてい
   
    1. flutterSDKのインストール
 
-   2. パス(環境変数)の更新
+   1. パス(環境変数)の更新
 
-   3. AndroidStudioのインストール
+   1. AndroidStudioのインストール
 
-   4. AndroidStudioにflutterとDartのインストール
+   1. AndroidStudioにflutterとDartのインストール
 
-   5. エミュレーターのインストール
+   1. エミュレーターのインストール
 
-   6. 新規プロジェクトの作成
+   1. 新規プロジェクトの作成
 
-   7. デモプログラムの起動
+   1. デモプログラムの起動
 
 ## 参考
    - [Flutter公式サイト](https://flutter.dev/docs/get-started/install)
