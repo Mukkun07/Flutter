@@ -32,6 +32,10 @@ class _MyAuthPageState extends State<MyAuthPage> {
   String newUserEmail = "";
   // 入力されたパスワード
   String newUserPassword = "";
+  // 入力されたメールアドレス（ログイン）
+  String loginUserEmail = "";
+  // 入力されたパスワード（ログイン）
+  String loginUserPassword = "";
   // 登録・ログインに関する情報を表示
   String infoText = "";
 
@@ -52,7 +56,6 @@ class _MyAuthPageState extends State<MyAuthPage> {
                   });
                 },
               ),
-              const SizedBox(height: 8),
               TextFormField(
                 decoration: InputDecoration(labelText: "パスワード（６文字以上）"),
                 // パスワードが見えないようにする
@@ -63,7 +66,7 @@ class _MyAuthPageState extends State<MyAuthPage> {
                   });
                 },
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
                   try {
@@ -89,8 +92,51 @@ class _MyAuthPageState extends State<MyAuthPage> {
                 },
                 child: Text("ユーザー登録"),
               ),
+              const SizedBox(height: 32),
+              TextFormField(
+                decoration: InputDecoration(labelText: "メールアドレス"),
+                onChanged: (String value) {
+                  setState(() {
+                    loginUserEmail = value;
+                  });
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "パスワード"),
+                obscureText: true,
+                onChanged: (String value) {
+                  setState(() {
+                    loginUserPassword = value;
+                  });
+                },
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () async {
+                  try {
+                    // メール/パスワードでログイン
+                    final FirebaseAuth auth = FirebaseAuth.instance;
+                    final UserCredential result =
+                    await auth.signInWithEmailAndPassword(
+                      email: loginUserEmail,
+                      password: loginUserPassword,
+                    );
+                    // ログインに成功した場合
+                    final User user = result.user!;
+                    setState(() {
+                      infoText = "ログインOK：${user.email}";
+                    });
+                  } catch (e) {
+                    // ログインに失敗した場合
+                    setState(() {
+                      infoText = "ログインNG：${e.toString()}";
+                    });
+                  }
+                },
+                child: Text("ログイン"),
+              ),
               const SizedBox(height: 8),
-              Text(infoText)
+              Text(infoText),
             ],
           ),
         ),
