@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19398203271",
+    "project_id": "virtual-mother",
+    "storage_bucket": "virtual-mother.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19398203271:android:072ee720fa6c4ab185e522",
+        "android_client_info": {
+          "package_name": "com.example.virtual_mother"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19398203271-4u64mq8nlh6adrdvp6d9682h4dnp9a88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCewFPPDVPPhZeFc7n2OtXvQfeOiRsDe94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19398203271-4u64mq8nlh6adrdvp6d9682h4dnp9a88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
